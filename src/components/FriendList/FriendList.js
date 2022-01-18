@@ -3,7 +3,12 @@ import FriendListItem from "./FriendListItem";
 
 function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul
+      className="friend-list"
+      style={{
+        padding: 0,
+      }}
+    >
       {friends.map((friend) => (
         <FriendListItem
           key={friend.id}
